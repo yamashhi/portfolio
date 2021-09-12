@@ -24,6 +24,7 @@ body{
 	overflow-x: hidden;
 	color: #000;
 	background-image:url("../images/bg.png");
+	background-attachment: fixed;
 }
 
 a{
