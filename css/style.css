@@ -23,7 +23,6 @@ body{
 	-webkit-text-size-adjust:100%;
 	overflow-x: hidden;
 	color: #000;
-	/* background: #fff; */
 	background-image:url("../images/bg.png");
 }
 
@@ -368,8 +367,8 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	#mainnav li{
 		display: inline-block;
 		padding: 45px 10px 20px;
-		font-size: 14px;
-		font-weight: 300;
+		font-size: 15px;
+		font-weight: 400;
 	}
 	
     #mainnav a{
@@ -390,7 +389,6 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		width: 50%;
 		float: left;
 		display: table;
-	background: #f6f6f6;
 	}
 
 	#sec02_02 .txt, #sec02_02 .bg{
@@ -401,6 +399,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		display: table-cell;
 		padding: 0 100px;
 		vertical-align: middle;
+		background-image:url("../images/bg2.png");
 	}
 	
 	/* SEC03 */
@@ -559,5 +558,6 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	}
 	.vMid{
 		padding: 0 20px;
+		background-image:url("../images/bg2.png");
 	}
 }
