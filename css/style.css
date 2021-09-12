@@ -1,0 +1,641 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/*lightbox.cssの読み込み
+---------------------------------------------------------------------------*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css);
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img,abbr,acronym,fieldset{border:0;}
+
+body{
+	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+	font-weight: 300;
+	-webkit-text-size-adjust:100%;
+	overflow-x: hidden;
+	color: #000;
+	background: #fff;
+}
+
+a{
+	color: #0066ff;
+	text-decoration: none;
+}
+
+a:hover, .active{
+    text-decoration: underline;
+}
+
+a:active, a:focus,input:active, input:focus{outline:0;}
+
+/*キーフレーム*/
+/*opa1（透明から着色状態に）*/
+
+@keyframes opa1 {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/*opa2（透明から着色状態に＆下からフェードイン）*/
+@keyframes opa2 {
+	0% {opacity: 0;top: 10px;}
+	100% {opacity: 1;top: 0px;}
+}
+
+/*CSSスライドショー設定
+---------------------------------------------------------------------------*/
+/*１枚目*/
+@keyframes slide1 {
+	0% {opacity: 0;}
+	19% {opacity: 1;}
+	35% {opacity: 1;}
+	45% {opacity: 0;}
+	100% {opacity: 0;}
+}
+/*２枚目*/
+@keyframes slide2 {
+	0% {opacity: 0;}
+	25% {opacity: 0;}
+	35% {opacity: 1;}
+	53% {opacity: 1;}
+	75% {opacity: 0;}
+	100% {opacity: 0;}
+}
+/*３枚目*/
+@keyframes slide3 {
+	0% {opacity: 0;}
+	35% {opacity: 0;}
+	53% {opacity: 1;}
+	73% {opacity: 1;}
+	100% {opacity: 0;}
+}
+/*４枚目*/
+@keyframes slide4 {
+	0% {opacity: 0;}
+	55% {opacity: 0;}
+	73% {opacity: 1;}
+	86% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+/*アニメーション要素のスタイル*/
+.animation {
+	opacity : 0;
+	visibility: hidden;
+	transition: 1s;
+	transform: translateY(30px);
+}
+/*アニメーション要素までスクロールした時のスタイル*/
+.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
+	animation-duration: 0.6S;	/*アニメーションの実行時間*/
+	animation-delay: 0.6s;		/*出現するタイミング（秒後）*/
+	animation-fill-mode: both;
+	text-decoration: none;
+}
+
+/*mainimg
+---------------------------------------------------------------------------*/
+/*画像ブロック*/
+#mainimg {
+	clear: left;
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+}
+/*３枚画像の共通設定*/
+.slide1,.slide2,.slide3, .slide4 {
+	width: 100%;
+	animation-duration: 15s;	/*実行する時間。「s」は秒の事。*/
+	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
+	position: absolute;left:0px;top:0px;
+	animation-fill-mode: both;
+	animation-delay: 1s;
+}
+/*土台画像*/
+.slide0 {
+	position: relative;width: 100%;height: auto;
+}
+/*１枚目*/
+.slide1 {
+	animation-name: slide1;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*２枚目*/
+.slide2 {
+	animation-name: slide2;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*３枚目*/
+.slide3 {
+	animation-name: slide3;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*４枚目*/
+.slide4 {
+	animation-name: slide4;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+
+/* ヘッダー
+------------------------------------------------------------*/
+#header{
+	position: relative;
+    overflow:hidden;
+    width:100%;
+	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
+	animation-duration: 0.6s;	/*アニメーションの実行時間*/
+	animation-delay: 0.6s;		/*出現するタイミング（秒後）*/
+	animation-fill-mode: both;
+	margin-top: 80px;
+}
+
+#top1 {
+	clear: left;
+	width: 60%;
+	min-width: 500px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 3;
+}
+
+#top2 {
+	position:absolute;
+	z-index: 2;
+	top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	width: 70%;
+	min-width: 500px;
+}
+
+#top3 {
+	position:absolute;
+	z-index: 1;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	width: 70%;
+	min-width: 500px;
+}
+
+#top5 {
+	position:absolute;
+	z-index: 4;
+	top: 70%;
+    left: 5%;
+	width: 20%;
+	min-width: 150px;
+	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
+	animation-duration: 1.2s;	/*アニメーションの実行時間*/
+	animation-delay: 1.2s;		/*出現するタイミング（秒後）*/
+	animation-fill-mode: both;
+}
+
+#top4 {
+	position:absolute;
+	z-index: 4;
+	top: 70%;
+    right: 5%;
+	width: 20%;
+	min-width: 150px;
+	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
+	animation-duration: 1.2s;	/*アニメーションの実行時間*/
+	animation-delay: 1.2s;		/*出現するタイミング（秒後）*/
+	animation-fill-mode: both;
+}
+
+#center-top {
+	text-align : center;
+	width: 100%;
+}
+
+#slogan{
+	position: absolute;
+    top: 50%;
+	width: 100%;
+	-webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+	color: #fff;
+	line-height: 1.2;
+	text-align: center;
+}
+
+#slogan h1{
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;
+	margin-bottom: 20px;
+	font-weight:normal;
+}
+
+#slogan h2{
+	font-size: 20px;
+	font-weight:normal;
+}
+
+
+/* 共通
+------------------------------------------------------------*/
+h1, h2{
+	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+section{clear:both;}
+
+section h2{
+	font-size: 22px;
+	font-weight:normal;
+	text-align: center;
+}
+
+.background{
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.inner{
+	width: 94%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.col2 li{
+	display: inline-block;
+	width: 100%;
+  	margin: 20px 0 20px 0;
+}
+
+
+/* SEC01 VISION
+------------------------------------------------------------*/
+
+.vision{
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+
+
+/* SEC02 MESSAGE
+------------------------------------------------------------*/
+.wrap{
+	clear: both;
+	width: 100%;
+	background: #f6f6f6;
+}
+
+.bg{
+	line-height: 0;
+}
+
+.txt h2{
+	padding: 0 0 20px !important;
+}
+
+
+/* SEC03 SERVICE MESSAGE STORY
+------------------------------------------------------------*/
+.col3 li{
+	margin-bottom: 50px;
+}
+
+.col3 img{
+	width: 100%;
+	display: block;
+	margin: -5px auto 20px;
+}
+
+.moive{
+	position: relative;
+}
+
+.moivebutton{
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+	width: 20% !important;
+}
+
+figure{
+	width: 100%;
+	margin: 0;
+}
+
+/* SEC04 STORY & SUCCESS
+------------------------------------------------------------*/
+#sec04{
+	background: url(../images/bgSec04.jpg) no-repeat 100% 100% fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	color: #fff;
+}
+
+/* SEC05 ThankYou
+------------------------------------------------------------*/
+#sec05{
+	margin-bottom: 10%;
+}
+
+/*PAGE TOP（↑）設定
+---------------------------------------------------------------------------*/
+/*通常時のボタンは非表示*/
+body .nav-fix-pos-pagetop a {display: none;}
+/*fixmenu_pagetop.jsで設定している設定値になったら出現するボタンスタイル*/
+body.is-fixed-pagetop .nav-fix-pos-pagetop a {
+	display: block;text-decoration: none;text-align: center;
+	width: 50px;		/*幅*/
+	line-height: 50px;	/*高さ*/
+	z-index: 1;
+	position: fixed;
+	bottom: 20px;	/*下から20pxの場所に配置*/
+	right: 3%;		/*右から3%の場所に配置*/
+	background: #666;	/*背景色（古いブラウザ用）*/
+	background: rgba(0,0,0,0.6);	/*背景色。0,0,0は黒の事。0.6は60%色がついた状態。*/
+	color: #fff;	/*文字色*/
+	border: 1px solid #fff;	/*枠線の幅、線種、色*/
+	animation-name: opa1;	/*keyframes.cssで使う@keyframesの指定*/
+	animation-duration: 1S;	/*アニメーションの実行時間*/
+	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを維持、終了後は最後のキーフレームを維持。*/
+}
+/*マウスオン時*/
+body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
+	background: #999;	/*背景色*/
+}
+
+
+/* RESPONSIVE 設定
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 1200px){
+	.inner{
+		width: 1024px;
+		padding-bottom: 120px;
+	}
+	section h2{
+		padding: 70px 0 20px;
+	}
+	.txt h2{
+		padding: 0 0 20px !important;
+	}
+}
+
+@media only screen and (min-width: 800px){
+	body{
+		font-size:14px;
+	}
+	
+    a#menu{
+		display:none;
+	}	
+
+	.panel{
+		display:block !important;
+	}
+
+	#mainnav{
+		position:fixed;
+		top: 0;
+		width:100%;
+		z-index:500;
+	}
+
+	#mainnav ul{
+		text-align: right;
+		padding-right: 30px;
+	}
+
+	#mainnav li{
+		display: inline-block;
+		padding: 45px 10px 20px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+	
+    #mainnav a{
+		color: #000;
+	}
+	
+	#mainnav.changeNav{
+		background: rgba(255,255,255,.9);
+		border-bottom: 1px solid #d1d1d1;
+	}
+	
+	#mainnav.changeNav li{
+		padding: 20px 10px;
+	}
+
+	/* SEC02 MESSAGE
+	-----------------*/
+	.txt, .bg{
+		width: 50%;
+		float: left;
+		display: table;
+	background: #f6f6f6;
+	}
+
+	#sec02_02 .txt, #sec02_02 .bg{
+		float: right;
+	}
+
+	.vMid{
+		display: table-cell;
+		padding: 0 100px;
+		vertical-align: middle;
+	}
+	
+	/* SEC03 SERVICE MESSAGE STORY
+	-----------------*/
+	.col3{
+		text-align: center;
+	}
+
+	.col3 li{
+		display: inline-block;
+		width: 30%;
+		padding: 0 1.5%;
+		margin-bottom: 0;
+		vertical-align: top;
+		text-align: left;
+	}
+	
+	/* SEC05 PROFILE
+	-----------------*/
+	#sec05 h2{
+		padding-top: 50px;
+		font-size: 30px;
+		font-weight:normal;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+
+@media only screen and (min-width: 641px){
+	.col2 li{
+		width: 40%;
+		padding: 0 3%;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	#map iframe{
+	    width: 96% !important;
+		left: 2%;
+	}
+}
+
+@media only screen and (max-width: 799px){
+	#slogan h1{
+		font-size: 31px;
+	}
+
+	#slogan h2{
+		font-size: 16px;
+	}
+
+    a#menu{
+		display: inline-block;
+		position: relative;
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+	}
+
+	#menuBtn{
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 18px;
+		height: 2px;
+		margin: -1px 0 0 -7px;
+		background: #7e88b0;
+		transition: .2s;
+	}
+
+	#menuBtn:before, #menuBtn:after{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 18px;
+		height: 2px;
+		background: #7e88b0;
+		transition: .3s;
+	}
+
+	#menuBtn:before{
+  		margin-top: -7px;
+	}
+
+	#menuBtn:after{
+    	margin-top: 5px;
+	}
+
+	a#menu .close{
+  		background: transparent;
+	}
+
+	a#menu .close:before, a#menu .close:after{
+  		margin-top: 0;
+	}
+
+	a#menu .close:before{
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+	}
+
+	a#menu .close:after{
+		transform: rotate(-135deg);
+		-webkit-transform: rotate(-135deg);
+	}
+
+	.panel{
+		width: 100%;
+		display: none;
+		overflow: hidden;
+		position: relative;
+		left: 0;
+		top: 0;
+		z-index: 100;
+	}
+
+	#mainnav{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		text-align: right;
+		z-index:500;
+	}
+
+	#mainnav ul{
+		border-bottom: 1px solid #ccc;
+		background: #fff;
+		text-align: left;
+	}
+
+	#mainnav li a{
+		position: relative;
+		display:block;
+		padding:15px 25px;
+		border-bottom: 1px solid #ccc;
+		color: #000;
+		font-weight: 400;
+	}
+
+	#mainnav li a:before{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		width: 6px;
+		height: 6px;
+		margin: -4px 0 0 0;
+		border-top: solid 2px #000;
+		border-right: solid 2px #000;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.col3 li{
+		margin: 0 auto;
+		display: block;
+	max-width: 288px;
+	}
+}
+
+@media only screen and (max-width: 1199px){
+	section h2{
+		padding: 50px 0 20px 0;
+	}
+	#sec01 h2{
+		padding: 70px 0 20px;
+	}
+	.vMid{
+		padding: 0 20px;
+	}
+}
