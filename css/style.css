@@ -2,8 +2,7 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 
-/*lightbox.cssの読み込み
----------------------------------------------------------------------------*/
+/*lightbox.cssの読み込み */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css);
 
 /* reset */
@@ -52,8 +51,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	100% {opacity: 1;top: 0px;}
 }
 
-/*CSSスライドショー設定
----------------------------------------------------------------------------*/
+/*CSSスライドショー設定 */
 /*１枚目*/
 @keyframes slide1 {
 	0% {opacity: 0;}
@@ -101,49 +99,10 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	visibility: visible;
 	transform: translateY(0);
 	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
-	animation-duration: 0.6S;	/*アニメーションの実行時間*/
-	animation-delay: 0.6s;		/*出現するタイミング（秒後）*/
+	animation-duration: 0.5S;	/*アニメーションの実行時間*/
+	animation-delay: 0.5s;		/*出現するタイミング（秒後）*/
 	animation-fill-mode: both;
 	text-decoration: none;
-}
-
-/*mainimg
----------------------------------------------------------------------------*/
-/*画像ブロック*/
-#mainimg {
-	clear: left;
-	width: 60%;
-	margin: 0 auto;
-	position: relative;
-}
-/*３枚画像の共通設定*/
-.slide1,.slide2,.slide3, .slide4 {
-	width: 100%;
-	animation-duration: 15s;	/*実行する時間。「s」は秒の事。*/
-	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
-	position: absolute;left:0px;top:0px;
-	animation-fill-mode: both;
-	animation-delay: 1s;
-}
-/*土台画像*/
-.slide0 {
-	position: relative;width: 100%;height: auto;
-}
-/*１枚目*/
-.slide1 {
-	animation-name: slide1;	/*上で設定しているキーフレーム（keyframes）の名前*/
-}
-/*２枚目*/
-.slide2 {
-	animation-name: slide2;	/*上で設定しているキーフレーム（keyframes）の名前*/
-}
-/*３枚目*/
-.slide3 {
-	animation-name: slide3;	/*上で設定しているキーフレーム（keyframes）の名前*/
-}
-/*４枚目*/
-.slide4 {
-	animation-name: slide4;	/*上で設定しているキーフレーム（keyframes）の名前*/
 }
 
 /* ヘッダー
@@ -153,68 +112,45 @@ a:active, a:focus,input:active, input:focus{outline:0;}
     overflow:hidden;
     width:100%;
 	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
-	animation-duration: 0.6s;	/*アニメーションの実行時間*/
-	animation-delay: 0.6s;		/*出現するタイミング（秒後）*/
+	animation-duration: 1s;	/*アニメーションの実行時間*/
+	animation-delay: 0.7s;		/*出現するタイミング（秒後）*/
 	animation-fill-mode: both;
 	margin-top: 80px;
 }
 
 #top1 {
 	clear: left;
-	width: 60%;
-	min-width: 500px;
+	width: 65%;
+	min-width: 375px;
 	margin: 0 auto;
+	margin-bottom: 6%;
 	position: relative;
 	z-index: 3;
 }
 
 #top2 {
 	position:absolute;
-	z-index: 2;
-	top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-	width: 70%;
-	min-width: 500px;
+	z-index: 4;
+	top: 70%;
+    right: 6%;
+	width: 25%;
+	min-width: 150px;
+	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
+	animation-duration: 1.5s;	/*アニメーションの実行時間*/
+	animation-delay: 1.5s;		/*出現するタイミング（秒後）*/
+	animation-fill-mode: both;
 }
 
 #top3 {
 	position:absolute;
-	z-index: 1;
-	top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-	width: 70%;
-	min-width: 500px;
-}
-
-#top5 {
-	position:absolute;
 	z-index: 4;
 	top: 70%;
-    left: 5%;
-	width: 20%;
+    left: 6%;
+	width: 25%;
 	min-width: 150px;
 	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
-	animation-duration: 1.2s;	/*アニメーションの実行時間*/
-	animation-delay: 1.2s;		/*出現するタイミング（秒後）*/
-	animation-fill-mode: both;
-}
-
-#top4 {
-	position:absolute;
-	z-index: 4;
-	top: 70%;
-    right: 5%;
-	width: 20%;
-	min-width: 150px;
-	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
-	animation-duration: 1.2s;	/*アニメーションの実行時間*/
-	animation-delay: 1.2s;		/*出現するタイミング（秒後）*/
+	animation-duration: 1.5s;	/*アニメーションの実行時間*/
+	animation-delay: 1.5s;		/*出現するタイミング（秒後）*/
 	animation-fill-mode: both;
 }
 
@@ -222,30 +158,6 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	text-align : center;
 	width: 100%;
 }
-
-#slogan{
-	position: absolute;
-    top: 50%;
-	width: 100%;
-	-webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-	color: #fff;
-	line-height: 1.2;
-	text-align: center;
-}
-
-#slogan h1{
-	font-size: 40px;
-	font-family: 'Pacifico', cursive;
-	margin-bottom: 20px;
-	font-weight:normal;
-}
-
-#slogan h2{
-	font-size: 20px;
-	font-weight:normal;
-}
-
 
 /* 共通
 ------------------------------------------------------------*/
@@ -283,19 +195,7 @@ section h2{
   	margin: 20px 0 20px 0;
 }
 
-
-/* SEC01 VISION
-------------------------------------------------------------*/
-
-.vision{
-	width: 60%;
-	margin: 0 auto;
-	padding-bottom: 80px;
-}
-
-
-/* SEC02 MESSAGE
-------------------------------------------------------------*/
+/* SEC01 プロフィール */
 .wrap{
 	clear: both;
 	width: 100%;
@@ -310,9 +210,7 @@ section h2{
 	padding: 0 0 20px !important;
 }
 
-
-/* SEC03 SERVICE MESSAGE STORY
-------------------------------------------------------------*/
+/* SEC02 動画 */
 .col3 li{
 	margin-bottom: 50px;
 }
@@ -343,8 +241,47 @@ figure{
 	margin: 0;
 }
 
-/* SEC04 STORY & SUCCESS
-------------------------------------------------------------*/
+/* SEC03 デザイン */
+
+/* SEC04 デッサン */
+/*画像ブロック*/
+#mainimg {
+	clear: left;
+	width: 70%;
+	max-width: 550px;
+	margin: 0 auto;
+	position: relative;
+}
+/*３枚画像の共通設定*/
+.slide1,.slide2,.slide3, .slide4 {
+	width: 100%;
+	animation-duration: 15s;	/*実行する時間。「s」は秒の事。*/
+	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
+	position: absolute;left:0px;top:0px;
+	animation-fill-mode: both;
+	animation-delay: 1s;
+}
+/*土台画像*/
+.slide0 {
+	position: relative;width: 100%;height: auto;
+}
+/*１枚目*/
+.slide1 {
+	animation-name: slide1;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*２枚目*/
+.slide2 {
+	animation-name: slide2;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*３枚目*/
+.slide3 {
+	animation-name: slide3;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*４枚目*/
+.slide4 {
+	animation-name: slide4;	/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+
 #sec04{
 	background: url(../images/bgSec04.jpg) no-repeat 100% 100% fixed;
 	background-size: cover;
@@ -352,14 +289,12 @@ figure{
 	color: #fff;
 }
 
-/* SEC05 ThankYou
-------------------------------------------------------------*/
+/* SEC05 ThankYou */
 #sec05{
 	margin-bottom: 10%;
 }
 
-/*PAGE TOP（↑）設定
----------------------------------------------------------------------------*/
+/*PAGE TOP（↑）設定 */
 /*通常時のボタンは非表示*/
 body .nav-fix-pos-pagetop a {display: none;}
 /*fixmenu_pagetop.jsで設定している設定値になったら出現するボタンスタイル*/
@@ -385,8 +320,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 }
 
 
-/* RESPONSIVE 設定
-------------------------------------------------------------*/
+/* RESPONSIVE 設定 */
 
 @media only screen and (min-width: 1200px){
 	.inner{
@@ -446,8 +380,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		padding: 20px 10px;
 	}
 
-	/* SEC02 MESSAGE
-	-----------------*/
+	/* SEC02 */
 	.txt, .bg{
 		width: 50%;
 		float: left;
@@ -465,8 +398,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		vertical-align: middle;
 	}
 	
-	/* SEC03 SERVICE MESSAGE STORY
-	-----------------*/
+	/* SEC03 */
 	.col3{
 		text-align: center;
 	}
@@ -480,8 +412,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		text-align: left;
 	}
 	
-	/* SEC05 PROFILE
-	-----------------*/
+	/* SEC05 */
 	#sec05 h2{
 		padding-top: 50px;
 		font-size: 30px;
@@ -499,21 +430,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	}
 }
 
-@media only screen and (max-width: 640px){
-	#map iframe{
-	    width: 96% !important;
-		left: 2%;
-	}
-}
-
 @media only screen and (max-width: 799px){
-	#slogan h1{
-		font-size: 31px;
-	}
-
-	#slogan h2{
-		font-size: 16px;
-	}
 
     a#menu{
 		display: inline-block;
