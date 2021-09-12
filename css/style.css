@@ -203,7 +203,6 @@ section h2{
 .wrap{
 	clear: both;
 	width: 100%;
-	background: #f6f6f6;
 }
 
 .bg{
@@ -399,7 +398,10 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		display: table-cell;
 		padding: 0 100px;
 		vertical-align: middle;
-		background-image:url("../images/bg2.png");
+		background-image:url("../images/bg3.png");
+		background-repeat: no-repeat;
+		background-position:50% 50%;
+		background-size:contain;
 	}
 	
 	/* SEC03 */
@@ -558,6 +560,9 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	}
 	.vMid{
 		padding: 0 20px;
-		background-image:url("../images/bg2.png");
+		background-image:url("../images/bg3.png");
+		background-repeat: no-repeat;
+		background-position:50% 50%;
+		background-size:contain;
 	}
 }
