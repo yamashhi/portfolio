@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Kiwi+Maru&display=swap');
 
 /*lightbox.cssの読み込み */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css);
@@ -151,9 +151,12 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	width: 20%;
 	min-width: 120px;
 	max-width: 200px;
+}
+
+.top2 {
 	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
 	animation-duration: 1.5s;	/*アニメーションの実行時間*/
-	animation-delay: 1.5s;		/*出現するタイミング（秒後）*/
+	animation-delay: 1s;		/*出現するタイミング（秒後）*/
 	animation-fill-mode: both;
 }
 
@@ -165,6 +168,9 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	width: 20%;
 	min-width: 120px;
 	max-width: 200px;
+}
+
+.top3 {
 	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
 	animation-duration: 1.5s;	/*アニメーションの実行時間*/
 	animation-delay: 2s;		/*出現するタイミング（秒後）*/
@@ -256,6 +262,10 @@ section h2{
 	width: 20% !important;
 }
 
+.moivebutton:hover{
+    opacity: 0.8;
+}
+
 figure{
 	width: 100%;
 	margin: 0;
@@ -280,7 +290,7 @@ figure{
     transition: .3s;
 }
 .over:hover div{
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(122, 122, 122, 0.5);
     opacity: 1;
 }
 
@@ -338,6 +348,10 @@ figure{
 /* SEC05 ThankYou */
 #sec05{
 	margin-bottom: 10%;
+}
+
+#sec05 h2{
+	font-family: 'Balsamiq Sans', cursive;
 }
 
 /*PAGE TOP（↑）設定 */
@@ -449,7 +463,8 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		transform: translate(-50%, -50%);
 		-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
-		width: 80%;
+		width: 86%;
+		height: initial;
 	}
 	
 	/* SEC03 */
@@ -612,13 +627,13 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 
 	.vMid{
 		position:absolute;
-		padding: 0 20px;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
-		width: 80%;
+		width: 85%;
 		vertical-align: middle;
+		height: initial;
 	}
 }

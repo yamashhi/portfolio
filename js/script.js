@@ -1,4 +1,10 @@
 $(function(){
+	$('body *').removeAttr('style');
+	$('body *').removeAttr('width');
+	$('body *').removeAttr('height');
+
+	$("#top3").addClass('top3');
+	$("#top2").addClass('top2');
 	
 	var
 	  winW = $(window).width(),
