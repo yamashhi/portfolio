@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
 
 /*lightbox.cssの読み込み */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css);
@@ -18,7 +16,7 @@ h1,h2,h3,h4,h5,h6{font-size:100%;}
 img,abbr,acronym,fieldset{border:0;}
 
 body{
-	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+	font: 14px/1.9 'Kiwi Maru', serif;
 	font-weight: 300;
 	-webkit-text-size-adjust:100%;
 	overflow-x: hidden;
@@ -48,42 +46,62 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 /*opa2（透明から着色状態に＆下からフェードイン）*/
 @keyframes opa2 {
-	0% {opacity: 0;top: 10px;}
-	100% {opacity: 1;top: 0px;}
+	0% {
+		transform: translateY(180px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+	}
+	40%,100% {
+		opacity: 1;
+	}
 }
 
 /*CSSスライドショー設定 */
-/*１枚目*/
+@keyframes slide0 {
+	0% {opacity: 1;}
+	20% {opacity: 1;}
+	30% {opacity: 0;}
+	50% {opacity: 0;}
+	60% {opacity: 0;}
+	100% {opacity: 0;}
+}
+/*1枚目*/
 @keyframes slide1 {
 	0% {opacity: 0;}
-	19% {opacity: 1;}
-	35% {opacity: 1;}
-	45% {opacity: 0;}
+	10% {opacity: 1;}
+	40% {opacity: 1;}
+	50% {opacity: 0;}
+	60% {opacity: 0;}
 	100% {opacity: 0;}
 }
-/*２枚目*/
+/*2枚目*/
 @keyframes slide2 {
 	0% {opacity: 0;}
-	25% {opacity: 0;}
-	35% {opacity: 1;}
-	53% {opacity: 1;}
-	75% {opacity: 0;}
+	20% {opacity: 0;}
+	30% {opacity: 1;}
+	60% {opacity: 1;}
+	70% {opacity: 0;}
 	100% {opacity: 0;}
 }
-/*３枚目*/
+/*3枚目*/
 @keyframes slide3 {
 	0% {opacity: 0;}
-	35% {opacity: 0;}
-	53% {opacity: 1;}
-	73% {opacity: 1;}
+	40% {opacity: 0;}
+	50% {opacity: 1;}
+	80% {opacity: 1;}
+	90% {opacity: 0;}
 	100% {opacity: 0;}
 }
-/*４枚目*/
+/*4枚目*/
 @keyframes slide4 {
 	0% {opacity: 0;}
 	55% {opacity: 0;}
-	73% {opacity: 1;}
-	86% {opacity: 1;}
+	60% {opacity: 0;}
+	70% {opacity: 1;}
+	85% {opacity: 1;}
+	95% {opacity: 0;}
 	100% {opacity: 0;}
 }
 
@@ -100,7 +118,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	visibility: visible;
 	transform: translateY(0);
 	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
-	animation-duration: 0.5S;	/*アニメーションの実行時間*/
+	animation-duration: 1S;	/*アニメーションの実行時間*/
 	animation-delay: 0.5s;		/*出現するタイミング（秒後）*/
 	animation-fill-mode: both;
 	text-decoration: none;
@@ -112,10 +130,6 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	position: relative;
     overflow:hidden;
     width:100%;
-	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
-	animation-duration: 1s;	/*アニメーションの実行時間*/
-	animation-delay: 0.7s;		/*出現するタイミング（秒後）*/
-	animation-fill-mode: both;
 	margin-top: 80px;
 }
 
@@ -132,10 +146,11 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 #top2 {
 	position:absolute;
 	z-index: 4;
-	top: 70%;
+	top: 10%;
     right: 6%;
-	width: 25%;
-	min-width: 150px;
+	width: 20%;
+	min-width: 120px;
+	max-width: 200px;
 	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
 	animation-duration: 1.5s;	/*アニメーションの実行時間*/
 	animation-delay: 1.5s;		/*出現するタイミング（秒後）*/
@@ -145,13 +160,14 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 #top3 {
 	position:absolute;
 	z-index: 4;
-	top: 70%;
+	top: 10%;
     left: 6%;
-	width: 25%;
-	min-width: 150px;
+	width: 20%;
+	min-width: 120px;
+	max-width: 200px;
 	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
 	animation-duration: 1.5s;	/*アニメーションの実行時間*/
-	animation-delay: 1.5s;		/*出現するタイミング（秒後）*/
+	animation-delay: 2s;		/*出現するタイミング（秒後）*/
 	animation-fill-mode: both;
 }
 
@@ -167,7 +183,7 @@ video {
 /* 共通
 ------------------------------------------------------------*/
 h1, h2{
-	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+	font-family: 'Kiwi Maru', serif;
 }
 
 img{
@@ -246,6 +262,27 @@ figure{
 }
 
 /* SEC03 デザイン */
+.over{
+    position: relative;
+}
+.over div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    opacity: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    transition: .3s;
+}
+.over:hover div{
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
 
 /* SEC04 デッサン */
 /*画像ブロック*/
@@ -261,29 +298,34 @@ figure{
 	width: 100%;
 	animation-duration: 15s;	/*実行する時間。「s」は秒の事。*/
 	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
-	position: absolute;left:0px;top:0px;
+	position: absolute;
+	left:0px;
+	top:0px;
 	animation-fill-mode: both;
 	animation-delay: 1s;
 }
 /*土台画像*/
 .slide0 {
-	position: relative;width: 100%;height: auto;
+	position: relative;
+	width: 100%;
+	height: auto;
+	animation-name: slide0;
 }
 /*１枚目*/
 .slide1 {
-	animation-name: slide1;	/*上で設定しているキーフレーム（keyframes）の名前*/
+	animation-name: slide1;
 }
 /*２枚目*/
 .slide2 {
-	animation-name: slide2;	/*上で設定しているキーフレーム（keyframes）の名前*/
+	animation-name: slide2;
 }
 /*３枚目*/
 .slide3 {
-	animation-name: slide3;	/*上で設定しているキーフレーム（keyframes）の名前*/
+	animation-name: slide3;
 }
 /*４枚目*/
 .slide4 {
-	animation-name: slide4;	/*上で設定しているキーフレーム（keyframes）の名前*/
+	animation-name: slide4;
 }
 
 #sec04{
@@ -395,14 +437,19 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		float: right;
 	}
 
+	.profimg {
+		position: relative;
+	}
+
 	.vMid{
-		display: table-cell;
-		padding: 0 100px;
+		position:absolute;
 		vertical-align: middle;
-		background-image:url("../images/bg3.png");
-		background-repeat: no-repeat;
-		background-position:50% 50%;
-		background-size:contain;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		width: 80%;
 	}
 	
 	/* SEC03 */
@@ -559,11 +606,19 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	#sec01 h2{
 		padding: 70px 0 20px;
 	}
+	.profimg {
+		position: relative;
+	}
+
 	.vMid{
+		position:absolute;
 		padding: 0 20px;
-		background-image:url("../images/bg3.png");
-		background-repeat: no-repeat;
-		background-position:50% 50%;
-		background-size:contain;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		width: 80%;
+		vertical-align: middle;
 	}
 }
