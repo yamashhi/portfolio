@@ -133,20 +133,29 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	margin-top: 80px;
 }
 
+.top-re{
+	position: relative;
+}
+
 #top1 {
 	clear: left;
 	width: 65%;
 	min-width: 375px;
 	margin: 0 auto;
-	margin-bottom: 6%;
-	position: relative;
+	z-index: 3;
+}
+
+#top4 {
+	clear: left;
+	width: 30%;
+	min-width: 200px;
+	margin: 0 auto;
 	z-index: 3;
 }
 
 #top2 {
 	position:absolute;
 	z-index: 4;
-	top: 10%;
     right: 6%;
 	width: 20%;
 	min-width: 120px;
@@ -163,7 +172,6 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 #top3 {
 	position:absolute;
 	z-index: 4;
-	top: 10%;
     left: 6%;
 	width: 20%;
 	min-width: 120px;
@@ -339,7 +347,7 @@ figure{
 }
 
 #sec04{
-	background: url(../images/sketch_bg.jpg) no-repeat 100% 100% fixed;
+	background: url(../images/bg2.png) no-repeat 100% 100% fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 }
@@ -457,7 +465,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	.vMid{
 		position:absolute;
 		vertical-align: middle;
-		top: 60%;
+		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		-webkit-transform: translate(-50%, -50%);
