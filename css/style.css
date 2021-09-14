@@ -153,38 +153,6 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	z-index: 3;
 }
 
-#top2 {
-	position:absolute;
-	z-index: 4;
-    right: 6%;
-	width: 20%;
-	min-width: 120px;
-	max-width: 200px;
-}
-
-.top2 {
-	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
-	animation-duration: 1.5s;	/*アニメーションの実行時間*/
-	animation-delay: 1s;		/*出現するタイミング（秒後）*/
-	animation-fill-mode: both;
-}
-
-#top3 {
-	position:absolute;
-	z-index: 4;
-    left: 6%;
-	width: 20%;
-	min-width: 120px;
-	max-width: 200px;
-}
-
-.top3 {
-	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
-	animation-duration: 1.5s;	/*アニメーションの実行時間*/
-	animation-delay: 2s;		/*出現するタイミング（秒後）*/
-	animation-fill-mode: both;
-}
-
 #center-top {
 	text-align : center;
 	width: 100%;
