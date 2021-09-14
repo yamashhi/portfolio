@@ -141,7 +141,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	clear: left;
 	width: 100%;
 	min-width: 352px;
-	max-width: 928px;
+	max-width: 896px;
 	height: auto;
 	margin: 0 auto;
 	z-index: 3;
@@ -325,7 +325,7 @@ figure{
 }
 
 #sec04{
-	background: url(../images/bg2.png) no-repeat 100% 100% fixed;
+	background: url(../images/bg4.png) no-repeat 100% 100% fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 }
