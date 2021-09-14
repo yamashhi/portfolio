@@ -325,7 +325,7 @@ figure{
 }
 
 #sec04{
-	background: url(../images/bg4.jpg) no-repeat 100% 100% fixed;
+	background: url(../images/bg4.jpg) no-repeat 100%;
 	background-size: cover;
 	-webkit-background-size: cover;
 }
