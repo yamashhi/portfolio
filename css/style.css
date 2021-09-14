@@ -139,8 +139,10 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 #top1 {
 	clear: left;
-	width: 65%;
-	min-width: 375px;
+	width: 100%;
+	min-width: 352px;
+	max-width: 928px;
+	height: auto;
 	margin: 0 auto;
 	z-index: 3;
 }
