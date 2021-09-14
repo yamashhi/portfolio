@@ -241,7 +241,7 @@ section h2{
 }
 
 .txt h2{
-	padding: 0 0 20px !important;
+	padding: 0 0 10px !important;
 }
 
 /* SEC02 動画 */
@@ -277,6 +277,14 @@ section h2{
 figure{
 	width: 100%;
 	margin: 0;
+}
+
+.first_moive{
+	padding-bottom: 0;
+}
+
+.secand_moive{
+	padding: 30px 0 20px 0 !important;
 }
 
 /* SEC03 デザイン */
@@ -394,11 +402,14 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		width: 1024px;
 		padding-bottom: 120px;
 	}
+	.first_moive{
+		padding-bottom: 0;
+	}
 	section h2{
 		padding: 70px 0 20px;
 	}
 	.txt h2{
-		padding: 0 0 20px !important;
+		padding: 0 0 10px !important;
 	}
 }
 
@@ -462,6 +473,10 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		position: relative;
 	}
 
+	.profimg img{
+		min-width: 375px;
+	}
+
 	.vMid{
 		position:absolute;
 		vertical-align: middle;
@@ -471,7 +486,6 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		width: 86%;
-		height: initial;
 	}
 	
 	/* SEC03 */
@@ -617,7 +631,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	.col3 li{
 		margin: 0 auto;
 		display: block;
-	max-width: 288px;
+		max-width: 288px;
 	}
 }
 
@@ -641,6 +655,5 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		-ms-transform: translate(-50%, -50%);
 		width: 85%;
 		vertical-align: middle;
-		height: initial;
 	}
 }

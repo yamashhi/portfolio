@@ -41,18 +41,7 @@ $(function(){
 			var
 				w = $(window).innerWidth(),
 				bg = $('.bg'),
-				bgH = bg.height();
-			
-			// if(w > 800){
-			// 	$(function(){		
-			//  	 	$(".vMid").css({'height':'auto','padding':'50px 20px'}, bgH);
-			// 	});
-			// }
-			// else{
-			// 	$(function(){		
-			//  	 	$(".vMid").css({'height':'auto','padding':'50px 20px'});
-			// 	});
-			// }		
+				bgH = bg.height();	
 		});
 	});
 	
