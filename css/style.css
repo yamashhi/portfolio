@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 /*lightbox.cssの読み込み */
 @import url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css);
@@ -214,6 +215,10 @@ section h2{
 	padding: 0 0 10px !important;
 }
 
+.font_english{
+	font-family: 'Nunito', sans-serif;
+}
+
 /* SEC02 動画 */
 .col3 li{
 	margin-bottom: 50px;
@@ -336,7 +341,7 @@ figure{
 }
 
 #sec05 h2{
-	font-family: 'Balsamiq Sans', cursive;
+	font-family: 'Nunito', sans-serif;
 }
 
 /*PAGE TOP（↑）設定 */
