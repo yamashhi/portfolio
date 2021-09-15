@@ -35,7 +35,20 @@ $(function(){
 			var
 				w = $(window).innerWidth(),
 				bg = $('.bg'),
-				bgH = bg.height();	
+				bgH = bg.height();
+
+				if(w > 800){
+					$(function(){		
+					  $(".prof_text").css({'font-size':'18px'});
+						  $(".prof_text").css({'font-size':'18px'});
+					});
+				}
+				else{
+					$(function(){		
+					  $(".prof_text").css({'font-size':'14px'});
+						  $(".prof_text").css({'font-size':'14px'});
+					});
+				}
 		});
 	});
 	
