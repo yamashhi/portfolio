@@ -1,7 +1,13 @@
 $(function(){
 	let images = document.querySelectorAll(".lazyload");
 	lazyload(images);
-	
+
+	// 遅延読み込み
+	ScrollReveal().reveal('.animation', {
+		delay: 500, // アニメーション開始までの時間
+		duration: 1600, // アニメーション完了にかかる時間
+	});
+
 	var
 	　　winW = $(window).width(),
 		winH = $(window).height(),
@@ -73,24 +79,6 @@ $(function(){
 			$('#mainnav').removeClass('changeNav');
 		}
 	});
-
-	// 遅延読み込み
-	$(window).on('load scroll',function (){
-		$('.animation').each(function(){
-			//ターゲットの位置を取得
-			var target = $(this).offset().top;
-			//スクロール量を取得
-			var scroll = $(window).scrollTop();
-			//ウィンドウの高さを取得
-			var height = $(window).height();
-			//ターゲットまでスクロールするとフェードインする
-			if (scroll > target - height){
-			//クラスを付与
-			$(this).addClass('active');
-			}
-		});
-	});
-
 });
 
 // top遷移

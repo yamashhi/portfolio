@@ -106,25 +106,6 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	100% {opacity: 0;}
 }
 
-/*アニメーション要素のスタイル*/
-.animation {
-	opacity : 0;
-	visibility: hidden;
-	transition: 1s;
-	transform: translateY(30px);
-}
-/*アニメーション要素までスクロールした時のスタイル*/
-.active {
-	opacity: 1;
-	visibility: visible;
-	transform: translateY(0);
-	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
-	animation-duration: 1S;	/*アニメーションの実行時間*/
-	animation-delay: 0.5s;		/*出現するタイミング（秒後）*/
-	animation-fill-mode: both;
-	text-decoration: none;
-}
-
 /* ヘッダー
 ------------------------------------------------------------*/
 #header{
