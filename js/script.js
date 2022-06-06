@@ -3,7 +3,7 @@ $(function(){
 	lazyload(images);
 	
 	var
-	  winW = $(window).width(),
+	　　winW = $(window).width(),
 		winH = $(window).height(),
 		nav = $('#mainnav ul a'),
 		curPos = $(this).scrollTop();
