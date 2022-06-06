@@ -7,6 +7,7 @@
 <title>山田絢華ポートフォリオ</title>
 <link rel="stylesheet" media="all" href="css/style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </head>
@@ -27,7 +28,7 @@
 
 <header id="header">
 	<div id="center-top">
-		<img id="top2" src="images/title2.png" alt="">
+		<img class="lazyload" id="top2" src="images/title2.png" data-src="images/title2.png" alt="">
 		<div calss="top-re">
 			<video id="top1" autoplay muted playsinline loop>
 				<source src="images/top_movie.webm" type="video/webm">  
@@ -43,10 +44,10 @@
 		<h2 class="background">プロフィール</h2>
 	</header>
 	<div class="wrap">
-		<p class="bg"><img src="images/profile1.png" alt=""></p>
+		<p class="bg"><img class="lazyload" src="images/profile1.png" data-src="images/profile1.png" alt=""></p>
 		<div class="txt">
 			<div class="profimg">
-				<img src="images/bg3.png" alt="">
+				<img class="lazyload" src="images/bg3.png" data-src="images/bg3.png" alt="">
 				<div class="vMid">
 					<h2>使えるソフトウェア</h2>
 					<p class="prof_text" id="font_english">Illustrator、Photoshop、InDesign、Premier Pro、AfterEffects、CLIP STUDIO PAINT</p>
@@ -55,10 +56,10 @@
 		</div>
 	</div>
 	<div id="sec02_02" class="wrap">
-		<p class="bg"><img src="images/profile2.png" alt=""></p>
+		<p class="bg"><img class="lazyload" data-src="images/profile2.png" alt=""></p>
 		<div class="txt">
 			<div class="profimg">
-				<img src="images/bg3.png" alt="">
+				<img class="lazyload" src="images/bg3.png" data-src="images/bg3.png" alt="">
 				<div class="vMid">
 					<h2>ストレス解消方</h2>
 					<p class="prof_text">行き詰まった時は黙々と洗濯物を畳んで何も考えない無の時間を作ります。
@@ -68,10 +69,10 @@
 		</div>
 	</div>
 	<div class="wrap">
-		<p class="bg"><img src="images/profile3.png" alt=""></p>
+		<p class="bg"><img class="lazyload" src="images/profile3.png" data-src="images/profile3.png" alt=""></p>
 		<div class="txt">
 			<div class="profimg">
-				<img src="images/bg3.png" alt="">
+				<img class="lazyload" src="images/bg3.png" data-src="images/bg3.png" alt="">
 				<div class="vMid">
 					<h2>制作過程</h2>
 					<p class="prof_text">ストックを増やすためにスポンジになろうと思い、いい作品を見ては吸収することを心がけています。
@@ -93,8 +94,8 @@
 			<li>
 				<h2 class="secand_movie">今日もいいことあったんだ</h2>
 				<div class="movie">
-					<img src="images/movie1.png" width="288" height="288" alt="">
-					<a href="https://www.youtube.com/watch?v=fRf4IKaETLw"><img class="moviebutton" src="images/movie_button.png" alt=""></a>
+					<img class="lazyload" src="images/movie1.png" data-src="images/movie1.png" width="288" height="288" alt="">
+					<a href="https://www.youtube.com/watch?v=fRf4IKaETLw"><img class="moviebutton lazyload" src="images/movie_button.png" data-src="images/movie_button.png" alt=""></a>
 				</div>
 				<p>制作期間 1ヶ月
 					<br>何気ない行動や些細な出来事が、喜びとなりクスッと笑顔を導いてくれます。小さな喜びを見つけた時、ささやかな出来事が集まった時にやっと気がつく、それは今日もいいことあったんだということです。そんな誰かに話したくなるようなお話をまとめました。
@@ -103,8 +104,8 @@
 			<li>
 				<h2 class="secand_movie">卒業制作</h2>
 				<div class="movie">
-					<img src="images/movie2.jpg" width="288" height="288" alt="">
-					<a href="https://www.youtube.com/watch?v=bIdnXG9rBVc"><img class="moviebutton" src="images/movie_button.png" alt=""></a>
+					<img class="lazyload" src="images/movie2.jpg" data-src="images/movie2.jpg" width="288" height="288" alt="">
+					<a href="https://www.youtube.com/watch?v=bIdnXG9rBVc"><img class="moviebutton lazyload" src="images/movie_button.png" data-src="images/movie_button.png" alt=""></a>
 				</div>
 				<p>制作期間1年
 					<br>『ムダンチュウシャハ寸時モデキマセン』この意味不明な看板から時空が少しずつ歪んでいきます。
@@ -114,8 +115,8 @@
 			<li>
 				<h2 class="secand_movie">僕の夢みる世界</h2>
 				<div class="movie">
-					<img src="images/movie3.png" width="288" height="288" alt="">
-					<a href="https://m.youtube.com/watch?v=VQVsM6TsuBg&feature=youtu.be"><img class="moviebutton" src="images/movie_button.png" alt=""></a>
+					<img class="lazyload" src="images/movie3.png" data-src="images/movie3.png" width="288" height="288" alt="">
+					<a href="https://m.youtube.com/watch?v=VQVsM6TsuBg&feature=youtu.be"><img class="moviebutton lazyload" src="images/movie_button.png" data-src="images/movie_button.png" alt=""></a>
 				</div>
 				<p>制作期間3週間
 					<br>もしも世界中の人々が家族ならばどうなっているだろうと家族から世界へと規模を大きくして考えてみました。
@@ -129,8 +130,8 @@
 			<li>
 				<h2 class="secand_movie">びっくり箱に住む高尾</h2>
 				<div class="movie">
-					<img src="images/movie4.png" width="288" height="288" alt="">
-					<a href="https://www.youtube.com/watch?v=Lr2cdETwgnM"><img class="moviebutton" src="images/movie_button1.png" alt=""></a>
+					<img class="lazyload" src="images/movie4.png" data-src="images/movie4.png" width="288" height="288" alt="">
+					<a href="https://www.youtube.com/watch?v=Lr2cdETwgnM"><img class="moviebutton lazyload" src="images/movie_button1.png" data-src="images/movie_button1.png" alt=""></a>
 				</div>
 				<p>制作期間3ヶ月半
 					<br>時間をリアルに表現したいと思い、姉妹の関係を描きました。実際に姉に対して私ならどう行動するか、妹が仕掛けてきたらどう対応するかと妄想しながら制作していました。実際に妹に電話して脚本に落とし込むところもありました。
@@ -139,8 +140,8 @@
 			<li>
 				<h2 class="secand_movie">オープニング映像</h2>
 				<div class="movie">
-					<img src="images/movie5.png" width="288" height="288" alt="">
-					<a href="https://m.youtube.com/watch?v=jhO_BL09Haw&feature=youtu.be"><img class="moviebutton" src="images/movie_button1.png" alt=""></a>
+					<img class="lazyload" src="images/movie5.png" data-src="images/movie5.png" width="288" height="288" alt="">
+					<a href="https://m.youtube.com/watch?v=jhO_BL09Haw&feature=youtu.be"><img class="moviebutton lazyload" src="images/movie_button1.png" data-src="images/movie_button1.png" alt=""></a>
 				</div>
 				<p>制作期間2週間
 					<br>サークルのイベントで司会が出てくる前のオープニング映像を作りました。明るくポップな作風を目指しました。
@@ -149,8 +150,8 @@
 			<li>
 				<h2 class="secand_movie">東京地下ラボ</h2>
 				<div class="movie">
-					<img src="images/movie6.png" width="288" height="288" alt="">
-					<a href="https://youtu.be/tR43iYBbWyk"><img class="moviebutton" src="images/movie_button1.png" alt=""></a>
+					<img class="lazyload" src="images/movie6.png" data-src="images/movie6.png" width="288" height="288" alt="">
+					<a href="https://youtu.be/tR43iYBbWyk"><img class="moviebutton lazyload" src="images/movie_button1.png" data-src="images/movie_button1.png" alt=""></a>
 				</div>
 				<p>制作期間3週間
 					<br><a href="https://www.cinra.net/column/202003-tokyochikalab_kngsh">特集ページ</a>
@@ -171,7 +172,7 @@
 			<li>
 				<h2 class="secand_movie">ロゴ</h2>
 				<a href="images/tamachan-1.png" data-lightbox="group1" data-title="多摩ちゃん">
-				<figure class="over"><img src="images/tamachan-1.png" alt=""><div></div></figure>
+				<figure class="over"><img class="lazyload" src="images/tamachan-1.png" data-src="images/tamachan-1.png" alt=""><div></div></figure>
 				</a>
 				<a hidden href="images/tamakun-2.jpg" data-lightbox="group1" data-title="多摩くん">
 				</a>
@@ -181,7 +182,7 @@
 			<li>
 				<h2 class="secand_movie">エコバッグ</h2>
 				<a href="images/logo1.png" data-lightbox="group2">
-				<figure class="over"><img src="images/logo1.png" alt=""><div></div></figure>
+				<figure class="over"><img class="lazyload" src="images/logo1.png" data-src="images/logo1.png" alt=""><div></div></figure>
 				</a>
 				<a hidden href="images/logo2.png" data-lightbox="group2">
 				</a>
@@ -192,7 +193,7 @@
 			<li>
 				<h2 class="secand_movie">壁画</h2>
 				<a href="images/mural0.jpg" data-lightbox="group3">
-				<figure class="over"><img id="mural_image" src="images/mural0.jpg" alt=""><div></div></figure>
+				<figure class="over"><img class="lazyload" id="mural_image" src="images/mural0.jpg" data-src="images/mural0.jpg" alt=""><div></div></figure>
 				</a>
 				<a hidden href="images/mural1.jpg" data-lightbox="group3"></a>
 				<a hidden href="images/mural2.jpg" data-lightbox="group3">
@@ -215,11 +216,11 @@
 	</header>
 	<div class="inner">
 		<aside id="mainimg">
-			<img src="images/sketch1.jpg" alt="" class="slide0">
-			<img src="images/sketch2.jpg" alt="" class="slide1">
-			<img src="images/sketch3.jpg" alt="" class="slide2">
-			<img src="images/sketch4.jpg" alt="" class="slide3">
-			<img src="images/sketch5.jpg" alt="" class="slide4">
+			<img src="images/sketch1.jpg" data-src="images/sketch1.jpg" alt="" class="slide0 lazyload">
+			<img src="images/sketch2.jpg" data-src="images/sketch2.jpg" alt="" class="slide1 lazyload">
+			<img src="images/sketch3.jpg" data-src="images/sketch3.jpg" alt="" class="slide2 lazyload">
+			<img src="images/sketch4.jpg" data-src="images/sketch4.jpg" alt="" class="slide3 lazyload">
+			<img src="images/sketch5.jpg" data-src="images/sketch5.jpg" alt="" class="slide4 lazyload">
 		</aside>
 	</div>
 </section>

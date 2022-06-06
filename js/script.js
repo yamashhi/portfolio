@@ -1,4 +1,6 @@
 $(function(){
+	let images = document.querySelectorAll(".lazyload");
+	lazyload(images);
 	
 	var
 	  winW = $(window).width(),
