@@ -13,7 +13,6 @@ caption,th{text-align:left;}
 q:before,q:after{content:'';}
 object,embed{vertical-align:top;}
 legend{display:none;}
-h1,h2,h3,h4,h5,h6{font-size:100%;}
 img,abbr,acronym,fieldset{border:0;}
 
 body{
@@ -22,8 +21,8 @@ body{
 	-webkit-text-size-adjust:100%;
 	overflow-x: hidden;
 	color: #000;
-	background-image:url("../images/bg.png");
-	background-attachment: fixed;
+	/* background-image:url("../images/bg.png"); */
+	/* background-attachment: fixed; */
 }
 
 a{
@@ -112,18 +111,23 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	position: relative;
     overflow:hidden;
     width:100%;
-	margin-top: 80px;
+	margin-top: 120px;
 }
 
 .top-re{
 	position: relative;
 }
 
+#top-message{
+	font-size: 21px;
+	margin-top: 50px;
+}
+
 #top1 {
 	clear: left;
 	width: 100%;
 	min-width: 352px;
-	max-width: 928px;
+	max-width: 650px;
 	height: auto;
 	margin: 0 auto;
 	z-index: 3;
@@ -168,6 +172,7 @@ section h2{
 .background{
 	font-size: 26px;
 	font-weight: bold;
+	padding: 70px 0 20px;
 }
 
 .inner{
@@ -182,7 +187,16 @@ section h2{
   	margin: 20px 0 20px 0;
 }
 
+.english{
+	font-family: 'Nunito', sans-serif;
+}
+
 /* SEC01 プロフィール */
+#sec01_title{
+	text-align: left;
+	margin-left: 10%;
+}
+
 .wrap{
 	clear: both;
 	width: 100%;
@@ -196,13 +210,14 @@ section h2{
 	padding: 0 0 10px !important;
 }
 
-#font_english{
-	font-family: 'Nunito', sans-serif;
-}
-
 /* SEC02 動画 */
 .col3 li{
-	margin-bottom: 50px;
+	display: inline-block;
+	width: 30%;
+	padding: 0 1.5%;
+	margin-bottom: 0;
+	vertical-align: top;
+	text-align: left;
 }
 
 .col3 img{
@@ -239,9 +254,9 @@ figure{
 	padding-bottom: 0;
 }
 
-.secand_movie{
+/* .secand_movie{
 	padding: 30px 0 20px 0 !important;
-}
+} */
 
 /* SEC03 デザイン */
 .over{
@@ -310,19 +325,21 @@ figure{
 	animation-name: slide4;
 }
 
-#sec04{
+/* #sec04{
 	background: url(../images/bg4.jpg) no-repeat 100%;
 	background-size: cover;
 	-webkit-background-size: cover;
-}
+} */
 
 /* SEC05 ThankYou */
 #sec05{
-	margin-bottom: 10%;
+	margin-bottom: 10px;
 }
 
-#sec05 h2{
-	font-family: 'Nunito', sans-serif;
+#footer{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 /*PAGE TOP（↑）設定 */
@@ -361,9 +378,9 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	.first_movie{
 		padding-bottom: 0;
 	}
-	section h2{
-		padding: 70px 0 20px;
-	}
+	/* section h2{
+		padding: 30px 0 20px;
+	} */
 	.txt h2{
 		padding: 0 0 10px !important;
 	}
@@ -445,27 +462,26 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	}
 	
 	/* SEC03 */
-	.col3{
+	.col4{
 		text-align: center;
 	}
 
-	.col3 li{
+	.col4 li{
 		display: inline-block;
-		width: 30%;
-		padding: 0 1.5%;
+		width: 23%;
 		margin-bottom: 0;
 		vertical-align: top;
 		text-align: left;
 	}
 	
 	/* SEC05 */
-	#sec05 h2{
+	/* #sec05 h2{
 		padding-top: 50px;
 		font-size: 30px;
 		font-weight:normal;
 		text-align: center;
 		text-decoration: none;
-	}
+	} */
 }
 
 @media only screen and (min-width: 641px){
@@ -589,15 +605,22 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		display: block;
 		max-width: 288px;
 	}
+	.col4 li{
+		display: inline-block;
+		width: 45%;
+		margin-bottom: 0;
+		vertical-align: top;
+		text-align: left;
+	}
 }
 
 @media only screen and (max-width: 1199px){
-	section h2{
-		padding: 50px 0 20px 0;
-	}
-	#sec01 h2{
+	/* section h2{
+		padding: 30px 0 20px 0;
+	} */
+	/* #sec01 h2{
 		padding: 70px 0 20px;
-	}
+	} */
 	.profimg {
 		position: relative;
 	}
