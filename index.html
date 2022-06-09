@@ -2,15 +2,22 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="山田絢華ポートフォリオ">
+<meta name="description" content="Yamada Ayaka-Portfolio">
 <meta name="viewport" content="width=device-width">
-<title>山田絢華ポートフォリオ</title>
+<title>Yamada Ayaka-Portfolio</title>
 <link rel="stylesheet" media="all" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+<link rel="stylesheet" type="text/css" href="css/modaal.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="js/script.js"></script>
+<script src="js/modaal.js"></script>
 </head>
 
 <body>
@@ -29,29 +36,31 @@
 
 <header id="header">
 	<div id="center-top">
-		<img class="lazyload" id="top2" src="images/title2.png" data-src="images/title2.png" alt="">
+		<!-- <img class="lazyload" id="top2" src="images/title2.png" data-src="images/title2.png" alt=""> -->
+		<h1 class="english">Ayaka Yamada</h1>
 		<div calss="top-re">
 			<video id="top1" autoplay muted playsinline loop>
 				<source src="images/top_movie.webm" type="video/webm">  
 				<source src="images/top_movie1.mp4" type="video/mp4">  
 			</video>
 		</div>
+		<p id="top-message">過ごしている日々の中で、<br>「こんなものがあったんだ。」<br>「気がつかなかった。」<br>そんな発見を伝えるために、ものづくりをしています。</p>
 	</div>
 </header>
 
-<!-- プロフィール -->
+<!-- 経歴 -->
 <section id="sec01" class="animation">
 	<header>
-		<h2 class="background">プロフィール</h2>
+		<h2 class="background" id="sec01_title">山田絢華の経歴</h2>
 	</header>
-	<div class="wrap">
+	<!-- <div class="wrap">
 		<p class="bg"><img class="lazyload" src="images/profile1.png" data-src="images/profile1.png" alt=""></p>
 		<div class="txt">
 			<div class="profimg">
 				<img class="lazyload" src="images/bg3.png" data-src="images/bg3.png" alt="">
 				<div class="vMid">
 					<h2>使えるソフトウェア</h2>
-					<p class="prof_text" id="font_english">Illustrator、Photoshop、InDesign、Premier Pro、AfterEffects、CLIP STUDIO PAINT</p>
+					<p class="prof_text english">Illustrator、Photoshop、InDesign、Premier Pro、AfterEffects、CLIP STUDIO PAINT</p>
 				</div>
 			</div>
 		</div>
@@ -81,19 +90,19 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </section>
-<!-- // プロフィール -->
+<!-- // 経歴 -->
 
-<!-- 動画 -->
+<!-- 好きなこと -->
 <section id="sec02" class="animation">
 	<header>
-		<h2 class="background">動画</h2>
+		<h2 class="background">好きなこと・強み</h2>
 	</header>
 	<div class="inner first_movie">
 		<ul class="col3">
 			<li>
-				<h2 class="secand_movie">今日もいいことあったんだ</h2>
+				<h2>今日もいいことあったんだ</h2>
 				<div class="movie">
 					<img class="lazyload" src="images/movie1.png" data-src="images/movie1.png" width="288" height="288" alt="">
 					<a href="https://www.youtube.com/watch?v=fRf4IKaETLw"><img class="moviebutton lazyload" src="images/movie_button.png" data-src="images/movie_button.png" alt=""></a>
@@ -103,7 +112,7 @@
 				</p>
 			</li>
 			<li>
-				<h2 class="secand_movie">卒業制作</h2>
+				<h2>卒業制作</h2>
 				<div class="movie">
 					<img class="lazyload" src="images/movie2.jpg" data-src="images/movie2.jpg" width="288" height="288" alt="">
 					<a href="https://www.youtube.com/watch?v=bIdnXG9rBVc"><img class="moviebutton lazyload" src="images/movie_button.png" data-src="images/movie_button.png" alt=""></a>
@@ -114,7 +123,7 @@
 				</p>
 			</li>
 			<li>
-				<h2 class="secand_movie">僕の夢みる世界</h2>
+				<h2>僕の夢みる世界</h2>
 				<div class="movie">
 					<img class="lazyload" src="images/movie3.png" data-src="images/movie3.png" width="288" height="288" alt="">
 					<a href="https://m.youtube.com/watch?v=VQVsM6TsuBg&feature=youtu.be"><img class="moviebutton lazyload" src="images/movie_button.png" data-src="images/movie_button.png" alt=""></a>
@@ -126,7 +135,7 @@
 			</li>
 		</ul>
 	</div>
-	<div class="inner secand_movie">
+	<!-- <div class="inner secand_movie">
 		<ul class="col3">
 			<li>
 				<h2 class="secand_movie">びっくり箱に住む高尾</h2>
@@ -159,12 +168,40 @@
 					<br>下水道の新たな可能性や魅力を発信する東京都下水道局主催のプロジェクトに参加しました。『クリエイティブ』の力をテーマに、30秒の動画を制作し下水道の魅力を発信しました。</p>
 			</li>
 		</ul>
+	</div> -->
+</section>
+<!-- // 好きなこと -->
+
+<!-- スキル -->
+<section id="sec03" class="animation">
+	<header>
+		<h2 class="background english">skill</h2>
+	</header>
+	<div class="inner">
+		<ul class="col4">
+			<li>
+				<h2 class="english">Ps</h2>
+				<img class="lazyload" src="images/tamachan-1.png" data-src="images/tamachan-1.png" alt="">
+			</li>
+			<li>
+				<h2 class="english">Ai</h2>
+				<img class="lazyload" src="images/tamakun-2.jpg" data-src="images/tamakun-2.jpg" alt="">
+			</li>
+			<li>
+				<h2 class="english">Pr</h2>
+				<img class="lazyload" src="images/tamachan-1.png" data-src="images/tamachan-1.png" alt="">
+			</li>
+			<li>
+				<h2 class="english">Ar</h2>
+				<img class="lazyload" src="images/tamakun-2.jpg" data-src="images/tamakun-2.jpg" alt="">
+			</li>
+		</ul>
 	</div>
 </section>
-<!-- // 動画 -->
+<!-- // スキル -->
 
 <!-- デザイン -->
-<section id="sec03" class="animation">
+<!-- <section id="sec03" class="animation">
 	<header>
 		<h2 class="background">デザイン</h2>
 	</header>
@@ -207,11 +244,23 @@
 			</li>
 		</ul>
 	</div>
-</section>
+</section> -->
 <!-- // デザイン -->
 
-<!-- デッサン --> 
+<!-- 作品 --> 
 <section id="sec04" class="animation">
+	<header>
+		<h2 class="background">作品</h2>
+	</header>
+	<ul class="slider">
+		<li><a href="https://kubotaryoko.com" class="iframe-open"><img src="images/tamakun-2.jpg" alt=""></a><h2>test1</h2></li>
+		<li><img src="images/tamachan-1.png" alt=""><h2>test2</h2></li>
+		<li><img src="images/tamachan-1.png" alt=""><h2>test3</h2></li>
+		<li><img src="images/tamachan-1.png" alt=""><h2>test4</h2></li>
+		<li><img src="images/tamachan-1.png" alt=""><h2>test5</h2></li>
+		<!--/slider--></ul>
+</section>
+<!-- <section id="sec04" class="animation">
 	<header>
 		<h2 class="background">デッサン</h2>
 	</header>
@@ -224,14 +273,21 @@
 			<img src="images/sketch5.jpg" data-src="images/sketch5.jpg" alt="" class="slide4 lazyload">
 		</aside>
 	</div>
-</section>
-<!-- // デッサン -->
+</section> -->
+<!-- // 作品 -->
 
-<section id="sec05" class="animation">
-	<header>
-		<h2>Thank you</h2>
-	</header>
-</section>
+<!-- <section id="sec05" class="english">
+		<h3>Contact</h3>
+		<h3>Tell: 090-xxxx-xxxx</h3>
+		<h3>email: xxx.xxx@gmail.com</h3>
+</section> -->
+<footer>
+	<div id="footer">
+		<h3>Contact</h3>
+		<h3>Tell: 090-xxxx-xxxx</h3>
+		<h3>email: xxx.xxx@gmail.com</h3>
+	</div>
+</footer>
 
 <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
 
