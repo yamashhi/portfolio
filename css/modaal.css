@@ -27,3 +27,7 @@
 .modaal-video .modaal-inner-wrapper{
 	padding:0;
 }
+
+.modaal-video-wrap{
+    margin: auto 10px !important;
+}
