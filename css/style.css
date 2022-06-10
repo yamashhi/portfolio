@@ -614,6 +614,10 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		transform: rotate(45deg);
 	}
 
+	#sec02{
+		margin-bottom: 400px;
+	}
+
 	.col3 li{
 		margin: 0 auto;
 		display: block;
