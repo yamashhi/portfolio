@@ -121,6 +121,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 #top-message{
 	font-size: 16px;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 #top1 {
@@ -189,6 +190,10 @@ section h2{
 
 .english{
 	font-family: 'Nunito', sans-serif;
+}
+
+.bg-gray{
+	background-color: #e0e0e0;
 }
 
 /* SEC01 プロフィール */
@@ -612,6 +617,30 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		border-right: solid 2px #000;
 		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
+	}
+
+	.title{
+		font-size: 30px;
+	}
+
+	h3{
+		font-size: 14px;
+	}
+
+	#top-message{
+		font-size: 14px;
+	}
+
+	section h2 {
+		font-size: 18px;
+		font-weight: normal;
+		text-align: center;
+	}
+
+	.background {
+		font-size: 22px;
+		font-weight: bold;
+		padding: 30px 0 20px;
 	}
 
 	#sec02{

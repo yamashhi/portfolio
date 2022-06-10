@@ -68,7 +68,7 @@
     height: 10px;/*ドットボタンのサイズ*/
     display: block;
     border-radius: 50%;
-    background:#ccc;/*ドットボタンの色*/
+    background:#fff;/*ドットボタンの色*/
 	padding: 0;
 }
 
