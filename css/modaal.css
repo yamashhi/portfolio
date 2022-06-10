@@ -29,5 +29,9 @@
 }
 
 .modaal-video-wrap{
-    margin: auto 10px !important;
+    margin: auto 20px !important;
+}
+
+.modaal-video #modaal-close{
+    top: 130px !important;
 }
