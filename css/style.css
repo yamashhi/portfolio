@@ -138,7 +138,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 	clear: left;
 	width: 40%;
 	max-width: 650px;
-	min-width: 200px;
+	min-width: 352px;
 	margin: 0 auto;
 	z-index: 3;
 }
