@@ -11,6 +11,12 @@ $(function(){
 		duration: 1600, // アニメーション完了にかかる時間
 	});
 
+	// 遅延読み込み(story)
+	ScrollReveal().reveal('.story_animation', {
+		delay: 1200, // アニメーション開始までの時間
+		duration: 2000, // アニメーション完了にかかる時間
+	});
+
 	var
 	　　winW = $(window).width(),
 		winH = $(window).height(),
