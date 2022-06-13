@@ -603,7 +603,12 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		width: 16%;
 		margin-bottom: 0;
 		vertical-align: top;
-		text-align: left;
+		text-align: center;
+	}
+
+	.col6 img{
+		width: 70%;
+		height: auto;
 	}
 	
 	/* SEC05 */
@@ -754,7 +759,7 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 	}
 
 	#sec02{
-		margin-bottom: 400px;
+		padding-bottom: 400px;
 	}
 
 	.col1 li{
@@ -784,7 +789,12 @@ body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
 		width: 30%;
 		margin-bottom: 0;
 		vertical-align: top;
-		text-align: left;
+		text-align: center;
+	}
+
+	.col6 img{
+		width: 70%;
+		height: auto;
 	}
 
 	/* フリーランス */
